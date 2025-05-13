@@ -1,3 +1,4 @@
+//Estrutura sequencial
 package com.mycompany.idadeemdias;
 
 import java.util.Scanner;
