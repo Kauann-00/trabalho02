@@ -1,22 +1,22 @@
-// Questão 7: Estrutura de sequencia
+Estrutura de sequencia
 
 package com.mycompany.mavenproject3;
 
 import java.util.Scanner;
 
 public class Mavenproject3 {
-
-
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         
-        System.out.print("Digite a temperatura em Celsius: ");
-        double celsius = scanner.nextDouble();
+        System.out.print("Digite a base: ");
+        double base = scanner.nextDouble();
         
-        double fahrenheit = (9 * celsius + 160) / 5;
+        System.out.print("Digite o expoente: ");
+        double expoente = scanner.nextDouble();
         
-        System.out.println(celsius + "°C equivale a " + fahrenheit + "°F");
+        double resultado = Math.pow(base, expoente);
+        
+        System.out.println(base + " elevado a " + expoente + " = " + resultado);
         
         scanner.close();
     }
