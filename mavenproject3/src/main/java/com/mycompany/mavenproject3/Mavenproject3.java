@@ -1,4 +1,4 @@
-// Questão 4: Estrutura de sequencia
+// Questão 7: Estrutura de sequencia
 
 package com.mycompany.mavenproject3;
 
@@ -9,16 +9,15 @@ public class Mavenproject3 {
 
 
     public static void main(String[] args) {
-        try (Scanner scanner = new Scanner(System.in)) {
-            System.out.print("Digite a base: ");
-            double base = scanner.nextDouble();
-            
-            System.out.print("Digite o expoente: ");
-            double expoente = scanner.nextDouble();
-            
-            double resultado = Math.pow(base, expoente);
-            
-            System.out.println(base + " elevado a " + expoente + " = " + resultado);
-        }
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Digite a temperatura em Celsius: ");
+        double celsius = scanner.nextDouble();
+        
+        double fahrenheit = (9 * celsius + 160) / 5;
+        
+        System.out.println(celsius + "°C equivale a " + fahrenheit + "°F");
+        
+        scanner.close();
     }
 }
